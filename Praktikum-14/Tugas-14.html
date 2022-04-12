@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Tugas 14</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head">JUDUL</h1>
+    <A HREF="#" onMouseOver="red()" onMouseOut="red2()"> Merah
+    </A><br>
+    <A HREF="#" onMouseOver="green()" onMouseOut="green2()"> Hijau
+    </A><br>
+    <A HREF="#" onMouseOver="blue()" onMouseOut="blue2()"> Biru
+    </A>
+    <script>
+        function red() {
+            document.getElementById("head").style.color = "#880000";
+            window.status = 'Warna merah';
+            document.getElementById("head").style.background = "#FFFFFF";
+
+        }
+
+        function red2() {
+            document.getElementById("head").style.color = "#000000";
+            window.status = "''";
+            document.getElementById("head").style.background = "none";
+        }
+
+        function green() {
+            document.getElementById("head").style.color = "#008800";
+            window.status = 'Warna hijau';
+            document.getElementById("head").style.background = "#00FFFF";
+        }
+
+        function green2() {
+            document.getElementById("head").style.color = "#000000";
+            window.status = "''";
+            document.getElementById("head").style.background = "none";
+        }
+
+        function blue() {
+            document.getElementById("head").style.color = "#000088";
+            window.status = 'Warna biru';
+            document.getElementById("head").style.background = "#FFFF00";
+        }
+
+        function blue2() {
+            document.getElementById("head").style.color = "#000000";
+            window.status = "''";
+            document.getElementById("head").style.background = "none";
+        }
+    </script>
+</body>
+
+</html>

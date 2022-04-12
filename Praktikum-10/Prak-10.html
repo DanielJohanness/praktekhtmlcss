@@ -1,0 +1,33 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Latihan 10</TITLE>
+</HEAD>
+
+<BODY>
+    <SCRIPT LANGUAGE="JavaScript">
+        var vSekarang = new Date()
+        var vHari = vSekarang.getDay()
+        var vTanggal = vSekarang.getDate()
+        var vBulan = vSekarang.getMonth() + 1
+        var vTahun = vSekarang.getYear()
+        document.write("Sekarang adalah hari ke-" + vHari + ", tanggal " +
+            vTanggal + "-" + vBulan + "-" + vTahun)
+        document.write("<BR>")
+        var vNamaHari = new Array("Senin", "Selasa", "Rabu", "Kamis",
+            "Jum'at", "Sabtu", "Minggu")
+        var vNamaBulan = new Array("Januari", "Pebruari", "Maret",
+            "April", "Mei", "Juni", "Juli",
+            "Agustus", "September", "Oktober",
+            "Nopember", "Desember")
+        var vSekarang = new Date()
+        var vHari = vNamaHari[vSekarang.getDay() - 1]
+        var vTanggal = vSekarang.getDate()
+        var vBulan = vNamaBulan[vSekarang.getMonth()]
+        var vTahun = vSekarang.getYear()
+        document.write("Sekarang adalah hari " + vHari + ", tanggal " +
+            vTanggal + " " + vBulan + " " + vTahun)
+    </SCRIPT>
+</BODY>
+
+</HTML>

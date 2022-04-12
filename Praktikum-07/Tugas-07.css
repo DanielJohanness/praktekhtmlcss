@@ -1,0 +1,49 @@
+BODY {
+    background-image: url(https://w7.pngwing.com/pngs/445/170/png-transparent-catgirl-anime-chibi-kawaii-cat-cg-artwork-animals-black-hair-thumbnail.png)
+}
+
+H1 {
+    font-family: Arial;
+    font-size: 48;
+    color: #4D9999;
+    letter-spacing: 5;
+    text-align: center;
+    background-color: #FFFFAA
+}
+
+H2 {
+    color: #FFFF00
+}
+
+UL {
+    list-style-image: url(https://i0.wp.com/38.media.tumblr.com/fa3e116c1b868c4210e5435e1ba8abd1/tumblr_nohjldAmxd1roi79do1_500.gif)
+}
+
+LI {
+    font-size: 18;
+    color: #FFFFFF;
+    padding-left: 10
+}
+
+P {
+    font-family: Comic Sans MS;
+    color: #FF93C9;
+    text-indent: 0;
+    margin-left: 0;
+    text-align: justify
+}
+
+P.Indent {
+    text-indent: 40;
+}
+
+P.DropCaps:first-letter {
+    font-size: 350%;
+    color: #FFFFFF;
+    font-weight: bold;
+    float: left
+}
+
+#Putih {
+    color: #FFFFFF
+}

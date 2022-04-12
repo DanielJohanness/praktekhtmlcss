@@ -1,0 +1,28 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Latihan 11</TITLE>
+</HEAD>
+
+<BODY>
+    <SCRIPT LANGUAGE="JavaScript">
+        var vSekarang = new Date()
+        var vJam = vSekarang.getHours()
+        var vMenit = vSekarang.getMinutes()
+        var vDetik = vSekarang.getSeconds()
+        document.write("Sekarang jam menunjukkan pukul : " + vJam + ":" +
+            vMenit + ":" + vDetik)
+        if (vJam >= 3 && vJam < 10)
+            alert("Selamat pagi!")
+        else
+        if (vJam >= 10 && vJam < 14)
+            alert("Selamat siang!")
+        else
+        if (vJam >= 14 && vJam < 18)
+            alert("Selamat sore!")
+        else
+            alert("Selamat malam!")
+    </SCRIPT>
+</BODY>
+
+</HTML>

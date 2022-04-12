@@ -1,0 +1,28 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Tugas 11</TITLE>
+</HEAD>
+
+<BODY>
+    <SCRIPT LANGUAGE="JavaScript">
+        var vSekarang = new Date()
+        var vJam = ("0" + (vSekarang.getHours())).slice(-2);
+        var vMenit = ("0" + (vSekarang.getMinutes())).slice(-2);
+        var vDetik = ("0" + (vSekarang.getSeconds())).slice(-2);
+        document.write("Sekarang jam menunjukkan pukul : " + vJam + ":" +
+            vMenit + ":" + vDetik)
+        if (vJam >= 3 && vJam < 10)
+            alert("Selamat pagi!")
+        else
+        if (vJam >= 10 && vJam < 14)
+            alert("Selamat siang!")
+        else
+        if (vJam >= 14 && vJam < 18)
+            alert("Selamat sore!")
+        else
+            alert("Selamat malam!")
+    </SCRIPT>
+</BODY>
+
+</HTML>

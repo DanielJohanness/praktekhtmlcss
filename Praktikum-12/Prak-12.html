@@ -1,0 +1,31 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Latihan 12</TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+        function Sandi() {
+            vKali = 1
+            do {
+                vPass = prompt("Masukkan kata sandi", "")
+                if (vPass == "123") {
+                    alert("Selamat datang di website saya")
+                    window.location.href("Prak-10.html")
+                    break
+                } else {
+                    alert("Kata sandi salah!")
+                    if (vKali == 3) {
+                        alert("Maaf, Anda sudah 3 kali salah")
+                        history.go(-1)
+                    }
+                    vKali = vKali + 1
+                }
+            }
+            while (vKali <= 3)
+        }
+    </SCRIPT>
+</HEAD>
+
+<BODY onLoad="Sandi()">
+</BODY>
+
+</HTML>

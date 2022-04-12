@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Tugas 13</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function tambah() {
+            var bil1 = parseFloat(document.ffrom.bil1.value);
+            var bil2 = parseFloat(document.ffrom.bil2.value);
+            var jumlah = bil1 + bil2;
+            alert("Hasil perjumlahan adalah " + jumlah);
+        }
+
+        function kurang() {
+            var bil1 = parseFloat(document.ffrom.bil1.value);
+            var bil2 = parseFloat(document.ffrom.bil2.value);
+            var jumlah = bil1 - bil2;
+            alert("Hasil perkurangan adalah " + jumlah);
+        }
+
+        function bagi() {
+            var bil1 = parseFloat(document.ffrom.bil1.value);
+            var bil2 = parseFloat(document.ffrom.bil2.value);
+            var jumlah = bil1 / bil2;
+            alert("Hasil perbagian adalah " + jumlah);
+        }
+
+        function kali() {
+            var bil1 = parseFloat(document.ffrom.bil1.value);
+            var bil2 = parseFloat(document.ffrom.bil2.value);
+            var jumlah = bil1 * bil2;
+            alert("Hasil perkalian adalah " + jumlah);
+        }
+    </script>
+    <form name="ffrom">
+
+        <input type="text" name="bil1">
+        <input type="text" name="bil2">
+
+        <input type="button" value="+" onclick="tambah()">
+        <input type="button" value="-" onclick="kurang()">
+
+
+        <input type="button" value="/" onclick="bagi()">
+        <input type="button" value="x" onclick="kali()">
+        <input type="reset" value="C">
+    </form>
+</body>
+
+</html>

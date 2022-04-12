@@ -1,0 +1,43 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Latihan 13</TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+        function Sandi() {
+            vKali = 1
+            do {
+                vPass = prompt("Masukkan kata sandi", "")
+                if (vPass == "123") {
+                    alert("Selamat datang di website saya")
+                    break
+                } else {
+                    alert("Kata sandi salah!")
+                    if (vKali == 3) {
+                        alert("Maaf, Anda sudah 3 kali salah")
+                        history.go(-1)
+                    }
+                    vKali = vKali + 1
+                }
+            }
+            while (vKali <= 3)
+        }
+    </SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR=#FFFEB2 ONLOAD="Sandi()">
+    <TABLE WIDTH="100%" HEIGHT="60" BGCOLOR="#000088">
+        <TR ALIGN="center">
+            <TD>
+                <INPUT TYPE="button" VALUE="Latihan 09" ONCLICK="window.open('Prak-09.html')">
+            </TD>
+            <TD>
+                <INPUT TYPE="button" VALUE="Latihan 10" ONCLICK="window.open('Prak-10.html')">
+            </TD>
+            <TD>
+                <INPUT TYPE="button" VALUE="Latihan 11" ONCLICK="window.open('Prak-11.html')">
+            </TD>
+        </TR>
+    </TABLE>
+</BODY>
+
+</HTML>
